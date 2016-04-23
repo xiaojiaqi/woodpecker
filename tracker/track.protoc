@@ -1,0 +1,30 @@
+syntax = "proto3";
+ 
+
+
+
+message Tracker {
+
+
+    int32 id          = 1 ;
+	string callstack    = 2;
+	int64 startime     = 3;
+	int64 endtime      = 4;
+	int64 newspace     = 5;
+	string sid          = 6;
+	int32 trackertype  = 7;// 0 for process
+	// 1 for event
+	// 2 for metric
+	
+
+	string function  = 8;
+
+	string eventstr    = 9;
+	int32 eventvalue      = 10;
+  int64  timestamp = 11;
+  int32 serverip = 12;
+  int32 serviceid = 13; 
+  string context = 14;
+ 
+
+}
